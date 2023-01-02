@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Nugraha</title>
+    <!-- -----------font--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Cuprum:ital,wght@0,700;1,400&family=Fredoka+One&family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:wght@800&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- -----------css--------- -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+ <!-- -------nav-------- -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-1g fixed-top">
+    <div class="container">
+      <a class="navbar-brand nama-logo" href="#">Toko Nugraha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/product.html">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/promo.html">promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid banner" id="home">
+    <div class="container text-center judul-home">
+        <h1 class="display-1">Selamat datang di Toko Nugraha</h1>
+        <h6 class="display-6">Disini kami menyediakan mulai dari bahan-bahan pokok sampai alat-alat rumah tangga yang anda butuhkan.</h6>
+        <a href="pages/product.html">
+            <button type="button" class="btn btn-danger btn-lg">Product</button>
+        </a>
+    </div>
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,138.7C840,128,960,64,1080,58.7C1200,53,1320,107,1380,133.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+  <!-- -------------about---------- -->
+  <section id="about" class="container-fluid about pt-5 pb-5">
+    <div class="container text-center about">
+        <h1 class="dissplay-1 mt-5 pt-5">About</h1>
+        <p class="mt-4">
+            Didirikan nya toko online Nugraha ini bertujuan agar bisa menjangkau,membantu,dan memudahkan para pelanggan dalam memenuhi setiap kebutuhan seperti bahan-bahan pokok.selain itu toko ini juga menyediakan berbagai alat kosmetik,kecantikan,obat-obatan,alat tulis,makanan ringan,pakan hewan,serta alat alat rumah tangga  yang diperlukan dan dibutuhkan.web toko ini masih dalam massa perkembangan.
+            dan toko ini juga melayani secara:
+        </p>
+        <div class="row pt-5 image">
+            <div class="col-md-4">
+              <img src="../img/icon/online toko.png">
+                <h3 class="mt-3">Online</h3>
+                <p>Melayani secara online</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../img/icon/toko online.png">
+                <h3 class="mt-3">Offline</h3>
+                <p>Melayani secara offline</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../img/icon/toko offline.png">
+                <h3 class="mt-3">Diantar ke rumah</h3>
+                <p>Rumah ke rumah</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,224L34.3,229.3C68.6,235,137,245,206,245.3C274.3,245,343,235,411,229.3C480,224,549,224,617,197.3C685.7,171,754,117,823,122.7C891.4,128,960,192,1029,208C1097.1,224,1166,192,1234,192C1302.9,192,1371,224,1406,240L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    <!------------and about---------- -->
+
+    <!-- Footer -->
+    <footer class="text-white text-center pb-1 pt-1">
+      <h4>Copyright © Ahmad Mulia Huda 2022</h4>
+    </footer>
+    <!-- End Footer -->
+    <!-- -----------js--------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

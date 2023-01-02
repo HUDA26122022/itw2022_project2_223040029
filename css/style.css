@@ -1,0 +1,65 @@
+.banner {
+   background: url(../img/product/background/background.jpg) no-repeat center center;
+   background-size:cover;
+   padding-top: 20%;
+   padding-bottom: 20%;
+   color: #fff
+}
+
+.nama-logo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+.image img{
+    cursor:pointer;
+}
+
+.image img:hover {
+    transform: scale(1.2);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+.judul-home h1{
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.banner h1{
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+}
+
+.banner h6{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: #edca07;
+}
+
+footer h4{
+ font-size: 20px;
+}
+
+.container h5 {
+    /* font-family: 'Francois One', sans-serif; */
+    font-weight: bold;
+}
+
+/* .card img {
+    width: 200px;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* font about */
+.about h1 {
+    font-family: 'Carter One', cursive;
+}

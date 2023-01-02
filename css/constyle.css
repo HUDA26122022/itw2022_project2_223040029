@@ -1,0 +1,84 @@
+/* nama logo */
+.nama-logo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+
+.contact {
+    background: linear-gradient(rgba(255, 0, 0, 0.327),rgba(0, 0, 255, 0.254));
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+
+/* Contact */
+
+#contact{
+    padding: 90px 0;
+}
+
+.sub-title{
+    text-align: center;
+}
+
+.bagian-contact {
+    flex-basis: 20%;
+}
+
+form input,form textarea{
+    width: 50%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.name{
+    margin-top: 100px;
+}
+.btn{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+}
+form .btn{
+    padding: 14px 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 213, 0);
+    border-radius: 5px;   
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 0);
+}
+
+
+footer {
+    background-color: #edca07;
+    color: #fff;
+}
+
+footer h4{
+ font-size: 20px;
+}
+
+.bagian-contact h1 {
+    font-family: 'Carter One', cursive;
+}
+
+
+#msg{
+    color: rgb(59, 195, 22);
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}

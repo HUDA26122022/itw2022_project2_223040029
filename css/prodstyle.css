@@ -1,0 +1,27 @@
+/* nama logo */
+.nama-logo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+
+/* product */
+.product h2 {
+    font-family: 'Carter One', cursive;
+}
+/* footer */
+footer {
+    background-color: #edca07;
+}
+
+footer h4{
+ font-size: 20px;
+}
+
+.image img{
+    cursor:pointer;
+}
+
+.image img:hover {
+    transform: scale(0.9);
+}

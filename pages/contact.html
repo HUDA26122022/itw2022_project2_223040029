@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Nugraha</title>
+    <!-- -----------font--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Cuprum:ital,wght@0,700;1,400&family=Fredoka+One&family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:wght@800&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- -----------css--------- -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/constyle.css">
+</head>
+<body class="body">
+ <!-- -------nav-------- -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-1g fixed-top">
+    <div class="container">
+      <a class="navbar-brand  nama-logo" href="#">Toko Nugraha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/product.html">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/promo.html">promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contact.html">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- contak me -->
+<div class="contact" id="contact">
+  <div class="container">
+          <div class="bagian-contact">
+              <h1 class="sub-title">Contact Me</h1>
+              <div class="contact-input">
+                  <form name="submit-to-google-sheet">
+                      <center><input type="text" name="Name" placeholder="Name" required></center>
+                  <center><input type="email" name="Email" placeholder="Email" required></center>
+              <center> <textarea name="Message" rows="6" placeholder="Your message"></textarea></center>
+          <center><button type="submit" class="btn">Submit</button></center>
+                  </form>
+                  <span id="msg"></span>
+              </div> 
+       </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-black text-center pb-1 pt-1">
+      <h4>Copyright © Ahmad Mulia Huda 2022</h4>
+    </footer>
+    <!-- End Footer -->
+    <!-- -----------js--------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzMsZZ5JsfnBBq7Fp-jNoJHJ9Bdmn4U5rqfvq5eM7I9RH-PiGz2mSS6O1A_2gIJbrf4/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML = "Pesan mu telah terkirim" 
+                setTimeout(function(){
+              msg.innerHTML = ""
+          },5000)
+
+          form.reset()
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </body>
+</html>
